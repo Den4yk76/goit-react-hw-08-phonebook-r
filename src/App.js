@@ -23,7 +23,7 @@ export default function App() {
     if (localStorage.getItem('token')) {
       dispatch(fetchCurrentUser(localStorage.getItem('token')));
     }
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (isError) {

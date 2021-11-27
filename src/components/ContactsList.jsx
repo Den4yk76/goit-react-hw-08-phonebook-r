@@ -18,10 +18,10 @@ function ContactsList() {
   const del = (ev) => deleteNum(ev.target.id, token);
   
 
-  const phones = () => dispatch(fetchPhones(token));
-  useEffect(() => { phones() }, []); 
-  useEffect(() => { if (isDelete) { phones() } }, [isDelete]);
-  useEffect(() => { if (isSubmit) { phones() } }, [isSubmit]);
+  // const phones = () => dispatch(fetchPhones(token));
+  useEffect(() => { dispatch(fetchPhones(token)) }, [token, dispatch]); 
+  useEffect(() => { if (isDelete) { dispatch(fetchPhones(token)) } }, [isDelete, token, dispatch]);
+  useEffect(() => { if (isSubmit) { dispatch(fetchPhones(token)) } }, [isSubmit, token, dispatch]);
   
   
     function filteredContacts() {

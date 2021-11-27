@@ -1,9 +1,9 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: rgb(3, 36, 36) solid 3px;
+  background-color: white;
 }
 .innerContainerLeft {
   margin-left: 50px;
@@ -15,8 +15,16 @@
 }
 .secondText,
 .firstText {
-  color: rgb(3, 36, 36);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
+
+.secondText:hover, .secondText:focus,
+.firstText:hover, .firstText:focus {
+  color: rgb(76, 194, 76);;
+}
+
+
 .firstText {
   margin-right: 20px;
 }
@@ -28,11 +36,11 @@
   transition-duration: 300ms;
   font-size: 20px;
   height: 28px;
-  background-color: rgb(130, 233, 99);
-  border: rgb(20, 20, 19) solid 1px;
-  border-radius: 5px;
+  background-color: rgb(76, 194, 76);
+  border: none;
+  color: white;
 }
 .button:hover,
 .button:focus {
-  background-color: rgb(99, 195, 233);
+  background-color: rgb(255, 0, 0);
 }
