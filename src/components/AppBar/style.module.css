@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  padding-top: 15px;
+  border-bottom: rgb(3, 36, 36) solid 3px;
+}
+.innerContainerLeft {
+  margin-left: 50px;
+}
+.innerContainerRight {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+.secondText,
+.firstText {
+  color: rgb(3, 36, 36);
+}
+.firstText {
+  margin-right: 20px;
+}
+.active {
+  color: rgb(190, 220, 20);
+}
+.button {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  font-size: 20px;
+  height: 28px;
+  background-color: rgb(130, 233, 99);
+  border: rgb(20, 20, 19) solid 1px;
+  border-radius: 5px;
+}
+.button:hover,
+.button:focus {
+  background-color: rgb(99, 195, 233);
+}
